@@ -413,7 +413,6 @@ def find_midpoint_guess(Y, X, xstep, ystep, theta):
         corner = np.dot([max(rect[:,0]), max(rect[:,1])], r) + rval_centroid
         guess = corner + np.dot([-d_x/2., -d_y/2.], r)
     else:
-        print("Unable to locate grid position.")
         guess = None
 
     return guess
